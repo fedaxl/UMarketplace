@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/drawable-v24/ic_favorite_off.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/drawable-v24/ic_favorite_on.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/drawable-v24/ic_menu_aboutus.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/drawable-v24/ic_menu_donate.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/drawable-v24/ic_menu_report_all.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/drawable-v24/ic_swipe_delete.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/drawable-v24/ic_swipe_edit.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/drawable-v24/side_nav_bar.xml" value="0.24583333333333332" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/layout/app_bar_home.xml" value="0.25" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/layout/card_donation.xml" value="0.2" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/layout/content_home.xml" value="0.2296875" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/layout/fragment_about.xml" value="0.2296875" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/layout/fragment_donate.xml" value="0.2296875" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/layout/fragment_donation_detail.xml" value="0.264" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/layout/fragment_product.xml" value="0.3625" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/layout/fragment_product_detail.xml" value="0.3625" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/layout/fragment_report.xml" value="0.25" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/layout/home.xml" value="0.2359375" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/layout/loading.xml" value="0.25" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/layout/login.xml" value="0.25" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/layout/nav_header.xml" value="0.2296875" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/layout/nav_header_home.xml" value="0.25" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/menu/menu_donate.xml" value="0.2296875" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/menu/menu_home.xml" value="0.25" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/menu/menu_product.xml" value="0.3625" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/menu/menu_report.xml" value="0.2296875" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/menu/nav_drawer_menu.xml" value="0.2296875" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/mipmap-anydpi-v26/ic_launcher_homer.xml" value="0.13518518518518519" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/mipmap-anydpi-v26/ic_launcher_homer_round.xml" value="0.17777777777777778" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

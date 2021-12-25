@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">UMarketplace</string>
+    <string name="productTitle">Welcome Homer</string>
+    <string name="productSubtitle">Sell your items Today!</string>
+    <string name="addButton">Add to list</string>
+    <string name="paypal">PayPal</string>
+    <string name="direct">Direct</string>
+    <string name="amount">Amount</string>
+    <string name="total">Total so Far</string>
+    <string name="totalSoFar">$ %1$d</string>
+    <string name="reportTitle">Products Report</string>
+    <string name="defaultAmount">00</string>
+    <string name="defaultMethod">N/A</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="action_sell">Sell Items</string>
+    <string name="action_report">Items for sale</string>
+    <string name="action_share">Share</string>
+    <string name="action_send">Send</string>
+    <string name="group_communicate">Communicate</string>
+    <string name="nav_header_title">U Marketplace</string>
+    <string name="nav_header_subtitle">voteforhomer@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_about">About Us</string>
+    <string name="aboutus_title">A student Marketplace</string>
+    <string name="aboutus_message">Hi, I\'m Homer\n\nThis is a student marketplace.\n\n Start selling your items Today!</string>
+    <string name="productsNotFound">No Products Yet…\nGo add a Product!</string>
+    <string name="productError">Error : Couldn\'t Make add Item for sale…</string>
+    <string name="productDetails">Product Details</string>
+    <string name="amt">Amount :</string>
+    <string name="payment">Payment :</string>
+    <string name="message">Message :</string>
+    <string name="upvotes">UpVotes :</string>
+    <string name="messageLoading">Please Wait while the Products are Loading...</string>
 </resources>

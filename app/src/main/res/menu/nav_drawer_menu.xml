@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/productFragment"
+            android:icon="@drawable/ic_menu_sell"
+            android:title="@string/action_sell" />
+        <item
+            android:id="@+id/reportFragment"
+            android:icon="@drawable/ic_menu_report"
+            android:title="@string/action_report" />
+        <item
+            android:id="@+id/aboutFragment"
+            android:icon="@drawable/ic_menu_aboutus"
+            android:title="@string/action_about" />
+    </group>
+    <item android:title="@string/group_communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/action_share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/action_send" />
+        </menu>
+    </item>
+</menu>
+

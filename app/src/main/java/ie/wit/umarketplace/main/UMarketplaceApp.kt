@@ -14,15 +14,15 @@ import timber.log.Timber
 
 class UMarketplaceApp : Application() {
 
-    lateinit var auth: FirebaseAuth
-    lateinit var database: DatabaseReference
-    lateinit var googleSignInClient: GoogleSignInClient
-    lateinit var storage: StorageReference
-    lateinit var userImage: Uri
-    lateinit var currentLocation : Location
-    lateinit var locationClient : FusedLocationProviderClient
-    lateinit var mMap : GoogleMap
-    lateinit var marker : Marker
+    //lateinit var auth: FirebaseAuth
+    //lateinit var database: DatabaseReference
+    //lateinit var googleSignInClient: GoogleSignInClient
+    //lateinit var storage: StorageReference
+    //lateinit var userImage: Uri
+    //lateinit var currentLocation : Location
+    //lateinit var locationClient : FusedLocationProviderClient
+    //lateinit var mMap : GoogleMap
+    //lateinit var marker : Marker
 
     override fun onCreate() {
         super.onCreate()
