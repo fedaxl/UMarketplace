@@ -26,7 +26,7 @@ object ProductManager : ProductStore {
             override fun onResponse(call: Call<List<ProductModel>>,
                                     response: Response<List<ProductModel>>
             ) {
-                productsList.value = response.body() as ArrayList<ProductModel>
+                productsList.value = response.body() as? ArrayList<ProductModel>
                 Timber.i("Retrofit JSON = ${response.body()}")
             }
 
