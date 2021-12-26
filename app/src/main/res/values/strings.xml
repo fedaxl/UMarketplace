@@ -31,4 +31,12 @@
     <string name="message">Message :</string>
     <string name="upvotes">UpVotes :</string>
     <string name="messageLoading">Please Wait while the Products are Loading...</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="confirmpass">confirmpass</string>
+    <string name="login">login</string>
+    <string name="new_account">new_account</string>
+    <string name="click_here">click_here</string>
+    <string name="signup">signup</string>
+    <string name="already_have_an_account">already_have_an_account</string>
 </resources>
