@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "508960187902",
+    "project_id": "marketplace-76a4e",
+    "storage_bucket": "marketplace-76a4e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508960187902:android:51db50287bdb907b440caf",
+        "android_client_info": {
+          "package_name": "org.wit.marketplace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508960187902-p7h89k60si2ma6themta6kjdc6kbemmm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": ""
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508960187902-p7h89k60si2ma6themta6kjdc6kbemmm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

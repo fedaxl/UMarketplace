@@ -51,6 +51,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
     implementation 'org.slf4j:slf4j-simple:1.6.1'
     implementation 'io.github.microutils:kotlin-logging:1.6.22'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
@@ -60,6 +61,7 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.8'
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
 
+    implementation 'com.google.firebase:firebase-core:20.0.2'
     implementation 'com.google.firebase:firebase-auth-ktx:21.0.1'
     implementation 'com.google.firebase:firebase-database-ktx:20.0.3'
     implementation 'com.google.firebase:firebase-storage-ktx:20.0.0'

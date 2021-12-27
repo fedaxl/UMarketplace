@@ -25,11 +25,14 @@
         <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/layout/fragment_report.xml" value="0.25" />
         <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/layout/home.xml" value="0.2359375" />
         <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/layout/loading.xml" value="0.25" />
-        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/layout/login.xml" value="0.25" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/layout/login.xml" value="0.1" />
         <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/layout/nav_header.xml" value="0.2296875" />
         <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/layout/nav_header_home.xml" value="0.25" />
         <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/menu/menu_donate.xml" value="0.2296875" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/menu/menu_edit.xml" value="0.4" />
         <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/menu/menu_home.xml" value="0.25" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/menu/menu_list.xml" value="0.4" />
+        <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/menu/menu_map.xml" value="0.4" />
         <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/menu/menu_product.xml" value="0.3625" />
         <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/menu/menu_report.xml" value="0.2296875" />
         <entry key="..\:/Users/feder/Desktop/UMarketplace/app/src/main/res/menu/nav_drawer_menu.xml" value="0.2296875" />

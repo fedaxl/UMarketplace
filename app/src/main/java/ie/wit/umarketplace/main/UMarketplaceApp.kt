@@ -1,6 +1,8 @@
 package ie.wit.umarketplace.main
 
 import android.app.Application
+import ie.wit.umarketplace.firebase.FirebaseDBManager
+import ie.wit.umarketplace.models.ProductStore
 import android.location.Location
 import android.net.Uri
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -14,18 +16,9 @@ import timber.log.Timber
 
 class UMarketplaceApp : Application() {
 
-    //lateinit var auth: FirebaseAuth
-    //lateinit var database: DatabaseReference
-    //lateinit var googleSignInClient: GoogleSignInClient
-    //lateinit var storage: StorageReference
-    //lateinit var userImage: Uri
-    //lateinit var currentLocation : Location
-    //lateinit var locationClient : FusedLocationProviderClient
-    //lateinit var mMap : GoogleMap
-    //lateinit var marker : Marker
-
     override fun onCreate() {
         super.onCreate()
+        Timber.plant(Timber.DebugTree())
         Timber.i("UMarketplace App started")
     }
 }
