@@ -45,7 +45,7 @@
     <string name="description">Description</string>
     <string name="comment">Review</string>
     <string name="paypal">paypal</string>
-    <string name="aboutus_message">aboutus_message</string>
+    <string name="aboutus_message">This is a Student Marketplace \n built by a student!</string>
     <string name="productTitle">productTitle</string>
     <string name="productSubtitle">productSubtitle</string>
     <string name="addButton">addButton</string>

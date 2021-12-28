@@ -7,6 +7,7 @@
     android:orientation="vertical"
     android:weightSum="4">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -20,7 +21,7 @@
             android:layout_width="286dp"
             android:layout_height="325dp"
             android:contentDescription="@string/desc_firebase_lockup"
-            android:src="@drawable/login_homer" />
+            android:src="@drawable/login_icon" />
 
         <TextView
             android:id="@+id/titleText"
@@ -43,7 +44,6 @@
             tools:text="Firebase User ID: 123456789abc" />
 
     </LinearLayout>
-
 
     <RelativeLayout
         android:layout_width="match_parent"
