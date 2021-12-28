@@ -43,22 +43,38 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="85dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="72dp"
+                android:layout_marginStart="95dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="94dp"
                 android:gravity="center"
                 android:text="@{product.title}" />
 
             <TextView
                 android:id="@+id/email"
-                android:layout_width="150dp"
-                android:layout_height="20dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="60dp"
-                android:layout_marginEnd="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/amount"
+                android:layout_alignStart="@+id/amount"
+                android:layout_alignEnd="@+id/amount"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="-2dp"
                 android:gravity="center"
                 android:text="@{product.email}"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="199dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="99dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="97dp"
+                android:gravity="center"
+                android:text="@{product.amount}"
                 android:textSize="11sp" />
 
             <ImageView
