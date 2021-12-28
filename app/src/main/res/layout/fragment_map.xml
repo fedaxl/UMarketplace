@@ -6,7 +6,7 @@
     <data>
         <variable
             name="mapvm"
-            type="ie.wit.parking.ui.map.MapViewModel" />
+            type="ie.wit.umarketplace.ui.map.MapViewModel" />
     </data>
 
 <androidx.constraintlayout.widget.ConstraintLayout
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <RelativeLayout
-            android:id="@+id/cardDonation"
+            android:id="@+id/cardProduct"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp">
@@ -48,7 +48,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="72dp"
                 android:gravity="center"
-                android:text="@{mapvm.observableParking.title}" />
+                android:text="@{mapvm.observableProduct.title}" />
 
             <TextView
                 android:id="@+id/email"
@@ -59,19 +59,8 @@
                 android:layout_marginTop="60dp"
                 android:layout_marginEnd="100dp"
                 android:gravity="center"
-                android:text="@{mapvm.observableParking.email}"
+                android:text="@{mapvm.observableProduct.email}"
                 android:textSize="11sp" />
-
-            <RatingBar
-                android:id="@+id/ratingBarAverage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="150dp"
-                android:isIndicator="true"
-                android:rating="@{mapvm.observableRating}"
-                android:theme="@style/RatingBar" />
 
             <ImageView
                 android:id="@+id/categoryIcon"
@@ -81,7 +70,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="0dp"
-                app:srcCompat="@drawable/camper_2" />
+                app:srcCompat="@drawable/for_sale_product" />
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>

@@ -5,8 +5,8 @@
 
     <data>
         <variable
-            name="parkingvm"
-            type="ie.wit.parking.ui.edit.EditViewModel" />
+            name="productvm"
+            type="ie.wit.umarketplace.ui.edit.EditViewModel" />
     </data>
     <ScrollView
         android:id="@+id/scrollView"
@@ -15,7 +15,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/editFragment"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             tools:context=".ui.edit.EditFragment">
 
 
@@ -30,12 +30,12 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:startIconContentDescription="title"
-                app:startIconDrawable="@drawable/private_parking">
+                app:startIconDrawable="@drawable/for_sale_product">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@={parkingvm.observableParking.title}" />
+                    android:text="@={productvm.observableProduct.title}" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -49,12 +49,12 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/title"
-                app:startIconDrawable="@drawable/private_parking">
+                app:startIconDrawable="@drawable/sold_product">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@={parkingvm.observableParking.description}" />
+                    android:text="@={productvm.observableProduct.description}" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -71,40 +71,24 @@
 
 
                 <RadioButton
-                    android:id="@+id/Nature"
+                    android:id="@+id/for_sale_product"
                     android:layout_width="95dp"
                     android:layout_height="wrap_content"
-                    android:checked="@{parkingvm.observableParking.category == 1}"
-                    android:onClick="@{()->parkingvm.radioButtonCategory(1)}"
-                    android:text="@string/Nature" />
+                    android:checked="@{productvm.observableProduct.category == 1}"
+                    android:onClick="@{()->productvm.radioButtonCategory(1)}"
+                    android:text="@string/for_sale" />
 
                 <RadioButton
-                    android:id="@+id/Public"
+                    android:id="@+id/sold_product"
                     android:layout_width="95dp"
                     android:layout_height="wrap_content"
-                    android:checked="@{parkingvm.observableParking.category == 2}"
-                    android:onClick="@{()->parkingvm.radioButtonCategory(2)}"
-                    android:text="@string/Public" />
-
-                <RadioButton
-                    android:id="@+id/Private"
-                    android:layout_width="95dp"
-                    android:layout_height="wrap_content"
-                    android:checked="@{parkingvm.observableParking.category == 3}"
-                    android:onClick="@{()->parkingvm.radioButtonCategory(3)}"
-                    android:text="@string/Private" />
-
-                <RadioButton
-                    android:id="@+id/Camping"
-                    android:layout_width="95dp"
-                    android:layout_height="wrap_content"
-                    android:checked="@{parkingvm.observableParking.category == 4}"
-                    android:onClick="@{()->parkingvm.radioButtonCategory(4)}"
-                    android:text="@string/Camping" />
+                    android:checked="@{productvm.observableProduct.category == 2}"
+                    android:onClick="@{()->productvm.radioButtonCategory(2)}"
+                    android:text="@string/sold" />
             </RadioGroup>
 
             <ImageView
-                android:id="@+id/parkingImage"
+                android:id="@+id/productImage"
                 android:layout_width="match_parent"
                 android:layout_height="269dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -120,7 +104,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/parkingImage" />
+                app:layout_constraintTop_toBottomOf="@+id/productImage"
+                tools:ignore="SpeakableTextPresentCheck" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

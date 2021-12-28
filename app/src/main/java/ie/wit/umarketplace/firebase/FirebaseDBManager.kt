@@ -11,7 +11,6 @@ import com.google.firebase.storage.StorageReference
 import ie.wit.umarketplace.helpers.readImageFromPath
 import ie.wit.umarketplace.models.ProductModel
 import ie.wit.umarketplace.models.ProductStore
-import ie.wit.umarketplace.models.Review
 import timber.log.Timber
 import java.io.ByteArrayOutputStream
 
@@ -92,16 +91,9 @@ object FirebaseDBManager: ProductStore {
             return
         }
         Timber.i("IMAGE STRING CREATE : ${product.image}")
-        product._id = key
+        product.uid = key
         database.child("products").child(key).setValue(product)
         updateImage(product.image, uid, key, context)
-    }
-    fun addReview(productid: String?, review: Review){
-
-        Timber.i("Add review $review")
-        if (productid != null) {
-            database.child("products").child(productid).child("reviews").push().setValue(review)
-        }
     }
 
     override fun delete(userid: String, productid: String) {

@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "508960187902",
-    "project_id": "marketplace-76a4e",
-    "storage_bucket": "marketplace-76a4e.appspot.com"
+    "project_number": "572621559650",
+    "project_id": "umarketplace",
+    "storage_bucket": "umarketplace.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:508960187902:android:51db50287bdb907b440caf",
+        "mobilesdk_app_id": "1:572621559650:android:5dae22637abaa4de893e3b",
         "android_client_info": {
-          "package_name": "org.wit.marketplace"
+          "package_name": "ie.wit.umarketplace"
         }
       },
       "oauth_client": [
         {
-          "client_id": "508960187902-p7h89k60si2ma6themta6kjdc6kbemmm.apps.googleusercontent.com",
+          "client_id": "572621559650-6ng9kcl371i5p6ql6s8mudm41quil25l.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": ""
+          "current_key": "AIzaSyBuWs_6tDTzf-KSutFS6zOxxQ6YAeZR9Mc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "508960187902-p7h89k60si2ma6themta6kjdc6kbemmm.apps.googleusercontent.com",
+              "client_id": "572621559650-6ng9kcl371i5p6ql6s8mudm41quil25l.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

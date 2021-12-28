@@ -6,7 +6,7 @@
     <data>
         <variable
             name="editlocvm"
-            type="ie.wit.parking.ui.editlocation.EditLocationViewModel" />
+            type="ie.wit.umarketplace.ui.editlocation.EditLocationViewModel" />
     </data>
 
 <androidx.constraintlayout.widget.ConstraintLayout
@@ -19,7 +19,7 @@
         android:id="@+id/appBarLayout2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
+        android:background="@color/color_secondary"
         android:fitsSystemWindows="true"
         app:elevation="0dip"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,7 +31,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:titleTextColor="@color/colorAccent" />
+            app:titleTextColor="@color/color_secondary" />
 
     </com.google.android.material.appbar.AppBarLayout>
 

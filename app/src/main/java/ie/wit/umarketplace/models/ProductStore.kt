@@ -11,8 +11,8 @@ interface ProductStore {
                 productsList:
                 MutableLiveData<List<ProductModel>>)
     fun findById(productid: String,
-                 parking: MutableLiveData<ProductModel>)
+                 product: MutableLiveData<ProductModel>)
     fun create(firebaseUser: MutableLiveData<FirebaseUser>, product: ProductModel, context: Context)
-    fun delete(userid:String,parkingid: String)
-    fun update(userid:String,parkingid: String,parking: ProductModel, context: Context, imageChanged: Boolean)
+    fun delete(userid:String,productid: String)
+    fun update(userid:String,productid: String,product: ProductModel, context: Context, imageChanged: Boolean)
 }

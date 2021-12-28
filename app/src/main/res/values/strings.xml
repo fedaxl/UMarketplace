@@ -5,7 +5,7 @@
     <string name="action_list">List</string>
     <string name="action_map">Map</string>
     <string name="action_view">View</string>
-    <string name="nav_header_title">Camper Parking</string>
+    <string name="nav_header_title">U Marketplace</string>
     <string name="nav_header_subtitle">test@test.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="productsNotFound">No Items Yet…\nGo Create a one!</string>
@@ -34,7 +34,7 @@
     <string name="emailpassword_title_text">Please Login Below</string>
     <string name="update">Update</string>
     <string name="delete">Delete</string>
-    <string name="select_placemark_image">Select parking image</string>
+    <string name="select_placemark_image">Select product image</string>
     <string name="for_sale">For Sale</string>
     <string name="sold">Sold</string>
     <string name="title_activity_maps">activity map</string>
@@ -44,4 +44,21 @@
     <string name="title">Title</string>
     <string name="description">Description</string>
     <string name="comment">Review</string>
+    <string name="paypal">paypal</string>
+    <string name="aboutus_message">aboutus_message</string>
+    <string name="productTitle">productTitle</string>
+    <string name="productSubtitle">productSubtitle</string>
+    <string name="addButton">addButton</string>
+    <string name="direct">direct</string>
+    <string name="amount">amount</string>
+    <string name="total">total</string>
+    <string name="totalSoFar">totalSoFar</string>
+    <string name="enter_amount">enter_amount</string>
+    <string name="message">message</string>
+    <string name="upvotes">upvotes</string>
+    <string name="amt">amt</string>
+    <string name="payment">payment</string>
+    <string name="group_communicate">group_communicate</string>
+    <string name="action_share">action_share</string>
+    <string name="action_send">action_send</string>
 </resources>
