@@ -86,6 +86,7 @@ init {
         errorStatus.postValue(false)
     }
     configureGoogleSignIn()
+
 }
 
     fun firebaseAuthWithGoogle(acct: GoogleSignInAccount) {
@@ -106,5 +107,4 @@ init {
                 }
             }
     }
-
 }

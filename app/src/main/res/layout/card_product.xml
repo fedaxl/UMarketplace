@@ -21,23 +21,27 @@
         <RelativeLayout
             android:id="@+id/cardProduct"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="162dp"
             android:padding="16dp">
+
 
             <ImageView
                 android:id="@+id/imageIcon"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
+                android:layout_width="wrap_content"
+                android:layout_height="87dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginEnd="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="39dp"
+                android:layout_marginBottom="20dp"
                 android:contentDescription="@string/app_name"
                 app:srcCompat="@mipmap/ic_launcher_round"
                 tools:ignore="ImageContrastCheck" />
 
-
             <TextView
                 android:id="@+id/title"
+                android:textColor="@color/black"
                 android:layout_width="238dp"
                 android:layout_height="35dp"
                 android:layout_alignParentStart="true"
@@ -49,32 +53,32 @@
                 android:gravity="center"
                 android:text="@{product.title}" />
 
-            <TextView
-                android:id="@+id/email"
-                android:layout_width="wrap_content"
+
+            <EditText
+                android:id="@+id/amount"
+                android:textColor="@color/black"
+                android:layout_width="76dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/amount"
-                android:layout_alignStart="@+id/amount"
-                android:layout_alignEnd="@+id/amount"
-                android:layout_marginStart="1dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="-2dp"
-                android:gravity="center"
-                android:text="@{product.email}"
-                android:textSize="11sp" />
+                android:layout_below="@+id/categoryIcon"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="-75dp"
+                android:layout_toStartOf="@+id/categoryIcon"
+                android:ems="10"
+                android:inputType="number" />
 
             <TextView
-                android:id="@+id/amount"
-                android:layout_width="199dp"
-                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:textColor="@color/black"
+                android:layout_width="205dp"
+                android:layout_height="35dp"
                 android:layout_below="@+id/title"
+                android:layout_alignEnd="@+id/amount"
                 android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="99dp"
-                android:layout_marginTop="9dp"
-                android:layout_marginEnd="97dp"
+                android:layout_marginStart="95dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="100dp"
                 android:gravity="center"
-                android:text="@{product.amount}"
+                android:text="@{product.email}"
                 android:textSize="11sp" />
 
             <ImageView
@@ -86,6 +90,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
                 app:srcCompat="@drawable/for_sale_product" />
+
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>

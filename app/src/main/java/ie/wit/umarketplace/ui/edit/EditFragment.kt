@@ -168,9 +168,7 @@ class EditFragment : Fragment(), OnMapReadyCallback {
                     Timber.i("EDIT PRODUCT ${fragBinding.productvm?.observableProduct!!.value!!}")
                     editViewModel.editProduct(loggedInViewModel.liveFirebaseUser.value?.uid!!, args.productid!!, fragBinding.productvm?.observableProduct!!.value!!, requireContext(), imageChanged)
                 }else{
-                    editViewModel.editProduct(
-                        loggedInViewModel.liveFirebaseUser.toString(), args.productid!!, fragBinding.productvm?.observableProduct!!.value!!,
-                        requireContext(), imageChanged)
+                    editViewModel.addProduct(loggedInViewModel.liveFirebaseUser, requireContext())
                 }
                 true
             }
@@ -197,6 +195,7 @@ class EditFragment : Fragment(), OnMapReadyCallback {
 
    override fun onResume() {
         super.onResume()
+
         //doRestartLocationUpdates()
     }
 

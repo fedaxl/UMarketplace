@@ -25,8 +25,8 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".activities.Home" android:exported="true"/>
         <activity android:name=".ui.auth.Login" android:exported="true"/>
+        <activity android:name=".activities.Home" android:exported="true"/>
         <activity
             android:name=".ui.editlocation.EditLocationActivity"
             android:exported="true"
