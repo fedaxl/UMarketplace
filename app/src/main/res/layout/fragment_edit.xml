@@ -38,7 +38,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/amount"
+                android:id="@+id/amt"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:hint="@string/amount"
@@ -63,7 +63,7 @@
                 app:endIconMode="clear_text"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/amount">
+                app:layout_constraintTop_toBottomOf="@+id/amt">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
@@ -111,7 +111,7 @@
                 app:layout_constraintHorizontal_bias="0.535"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Category"
-                app:srcCompat="@drawable/placeholder" />
+                app:srcCompat="@drawable/placeholder_image" />
 
             <com.google.android.gms.maps.MapView
                 android:id="@+id/mapView"
