@@ -21,75 +21,71 @@
         <RelativeLayout
             android:id="@+id/cardProduct"
             android:layout_width="match_parent"
-            android:layout_height="162dp"
+            android:layout_height="146dp"
             android:padding="16dp">
 
 
             <ImageView
                 android:id="@+id/imageIcon"
-                android:layout_width="wrap_content"
-                android:layout_height="87dp"
+                android:layout_width="99dp"
+                android:layout_height="97dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="11dp"
-                android:layout_marginTop="39dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="16dp"
                 android:contentDescription="@string/app_name"
                 app:srcCompat="@mipmap/ic_launcher_round"
                 tools:ignore="ImageContrastCheck" />
 
+
             <TextView
                 android:id="@+id/title"
-                android:textColor="@color/black"
-                android:layout_width="238dp"
-                android:layout_height="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="95dp"
-                android:layout_marginTop="17dp"
-                android:layout_marginEnd="94dp"
+                android:layout_marginStart="129dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="67dp"
                 android:gravity="center"
-                android:text="@{product.title}" />
-
-
-            <EditText
-                android:id="@+id/amount"
+                android:text="@{product.title}"
+                android:textAlignment="viewStart"
                 android:textColor="@color/black"
-                android:layout_width="76dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/categoryIcon"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="-75dp"
-                android:layout_toStartOf="@+id/categoryIcon"
-                android:ems="10"
-                android:inputType="number" />
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/email"
-                android:textColor="@color/black"
-                android:layout_width="205dp"
-                android:layout_height="35dp"
+                android:layout_width="146dp"
+                android:layout_height="28dp"
                 android:layout_below="@+id/title"
                 android:layout_alignEnd="@+id/amount"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="95dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="100dp"
+                android:layout_marginStart="128dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="127dp"
                 android:gravity="center"
                 android:text="@{product.email}"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
                 android:textSize="11sp" />
 
-            <ImageView
-                android:id="@+id/categoryIcon"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                app:srcCompat="@drawable/for_sale_product" />
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="216dp"
+                android:layout_marginTop="79dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginBottom="11dp"
+                android:layout_toEndOf="@+id/imageIcon"
+                tools:text="@{product.amount}" />
 
 
         </RelativeLayout>

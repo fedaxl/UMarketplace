@@ -66,7 +66,7 @@ class MapViewModel : ViewModel() {
             doMarkerSelected(it)
             true
         }
-        map?.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng(37.360401, -6.043043), 10f))
+        map?.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng(53.3498, -6.2603), 10f))
     }
     fun mapLocationUpdate(context: Context) {
         Timber.i("Step1")

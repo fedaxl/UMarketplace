@@ -38,11 +38,12 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/amt"
+                android:id="@+id/amount"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 app:boxBackgroundColor="@color/white"
                 app:endIconMode="clear_text"
+                android:hint="@string/amount"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/title">
@@ -50,7 +51,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/amount" />
+                    android:text="@={productvm.observableProduct.amount}" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -62,7 +63,7 @@
                 app:endIconMode="clear_text"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/amt">
+                app:layout_constraintTop_toBottomOf="@+id/amount">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
@@ -132,15 +133,6 @@
                 app:layout_constraintStart_toEndOf="@+id/productImage"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <Button
-                android:id="@+id/button"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_marginStart="280dp"
-                android:layout_marginBottom="44dp"
-                android:text="Save"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </layout>
