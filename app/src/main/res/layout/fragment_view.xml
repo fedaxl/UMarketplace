@@ -34,6 +34,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="TouchTargetSizeCheck" />
 
+
             <TextView
                 android:id="@+id/description"
                 android:layout_width="307dp"
@@ -69,32 +70,13 @@
                 app:layout_constraintTop_toBottomOf="@+id/description"
                 app:srcCompat="@drawable/ic_launcher_foreground" />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/comment"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:hint="@string/comment"
-                app:boxBackgroundColor="@color/white"
-                app:endIconMode="clear_text"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/mapView"
-                app:startIconContentDescription="title"
-                app:startIconDrawable="@drawable/for_sale_product">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/commentText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-            </com.google.android.material.textfield.TextInputLayout>
-
             <Button
                 android:id="@+id/reviewButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="send"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/comment" />
+                app:layout_constraintTop_toBottomOf="@+id/mapView" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

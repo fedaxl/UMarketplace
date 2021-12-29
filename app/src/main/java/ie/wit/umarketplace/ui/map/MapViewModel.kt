@@ -15,7 +15,6 @@ import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
 import com.squareup.picasso.Picasso
 import ie.wit.umarketplace.R
-
 import ie.wit.umarketplace.firebase.FirebaseDBManager
 import ie.wit.umarketplace.models.ProductModel
 import timber.log.Timber
@@ -24,8 +23,6 @@ import androidx.core.content.ContextCompat
 import android.graphics.drawable.Drawable
 
 import com.google.android.gms.maps.model.BitmapDescriptor
-
-
 
 
 class MapViewModel : ViewModel() {
@@ -38,14 +35,9 @@ class MapViewModel : ViewModel() {
         set(value) {_products.value = value.value}
 
     private val _product = MutableLiveData<ProductModel>()
-    var observableProduct: LiveData<ProductModel> = TODO()
+    var observableProduct: LiveData<ProductModel>
         get() = _product
-
-
-    private val _rating = MutableLiveData<Float>()
-    var observableRating: LiveData<Float>
-        get() = _rating
-        set(value) {_rating.value = value.value}
+        set(value) {_product.value = value.value}
 
     fun load(email:String) {
         try {

@@ -23,7 +23,7 @@ class ViewFragment : Fragment() , OnMapReadyCallback {
 
     private var _fragBinding: FragmentViewBinding? = null
     // This property is only valid between onCreateView and onDestroyView.
-    //private val args by navArgs<ViewFragmentArgs>()
+    private val args by navArgs<ViewFragmentArgs>()
     private val fragBinding get() = _fragBinding!!
     private lateinit var viewViewModel: ViewViewModel
 
@@ -97,9 +97,9 @@ class ViewFragment : Fragment() , OnMapReadyCallback {
         _fragBinding = null
     }
 
- /*   override fun onResume() {
+  override fun onResume() {
         super.onResume()
         viewViewModel.getProduct( args.productid)
     }
-*/
+
 }

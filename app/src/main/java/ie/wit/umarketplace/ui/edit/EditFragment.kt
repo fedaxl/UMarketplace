@@ -2,6 +2,7 @@ package ie.wit.umarketplace.ui.edit
 
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import android.os.Bundle
 import android.view.*
 import android.widget.Toast
@@ -23,7 +24,6 @@ import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.MapView
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.squareup.picasso.Picasso
-import ie.wit.umarketplace.ui.editlocation.EditLocationActivity
 import ie.wit.umarketplace.R
 import ie.wit.umarketplace.databinding.FragmentEditBinding
 import ie.wit.umarketplace.helpers.checkLocationPermissions
@@ -31,13 +31,14 @@ import ie.wit.umarketplace.helpers.createDefaultLocationRequest
 import ie.wit.umarketplace.models.Location
 import ie.wit.umarketplace.models.ProductModel
 import ie.wit.umarketplace.ui.auth.LoggedInViewModel
+import ie.wit.umarketplace.ui.editlocation.EditLocationActivity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import timber.log.Timber
 
 
-class EditFragment : Fragment() , OnMapReadyCallback {
+class EditFragment : Fragment(), OnMapReadyCallback {
 
     private var _fragBinding: FragmentEditBinding? = null
     // This property is only valid between onCreateView and onDestroyView.
@@ -123,6 +124,7 @@ class EditFragment : Fragment() , OnMapReadyCallback {
         when (status) {
             true -> {
                 view?.let {
+                    //comment this if you want to immediately return to Report
                     findNavController().popBackStack()
                 }
             }
@@ -151,7 +153,7 @@ class EditFragment : Fragment() , OnMapReadyCallback {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-
+    // Ref. https://stackoverflow.com/questions/38195522/what-is-oncreateoptionsmenumenu-menu
         return when (item.itemId) {
             R.id.listFragment -> {
                 NavigationUI.onNavDestinationSelected(item,
@@ -164,9 +166,11 @@ class EditFragment : Fragment() , OnMapReadyCallback {
             R.id.save -> {
                 if(edit){
                     Timber.i("EDIT PRODUCT ${fragBinding.productvm?.observableProduct!!.value!!}")
-                    editViewModel.editProduct(loggedInViewModel.liveFirebaseUser.value?.uid!!, args.productid!!,fragBinding.productvm?.observableProduct!!.value!!, requireContext(), imageChanged)
+                    editViewModel.editProduct(loggedInViewModel.liveFirebaseUser.value?.uid!!, args.productid!!, fragBinding.productvm?.observableProduct!!.value!!, requireContext(), imageChanged)
                 }else{
-                    //editViewModel.editProduct(loggedInViewModel.liveFirebaseUser, requireContext())
+                    editViewModel.editProduct(
+                        loggedInViewModel.liveFirebaseUser.toString(), args.productid!!, fragBinding.productvm?.observableProduct!!.value!!,
+                        requireContext(), imageChanged)
                 }
                 true
             }
@@ -191,12 +195,49 @@ class EditFragment : Fragment() , OnMapReadyCallback {
         _fragBinding = null
     }
 
-  /*  override fun onResume() {
+   override fun onResume() {
         super.onResume()
-        doRestartLocationUpdates()
-
+        //doRestartLocationUpdates()
     }
-   @SuppressLint("MissingPermission")
+
+
+
+    @SuppressLint("MissingPermission")
+    fun doSetCurrentLocation() {
+        locationService.lastLocation.addOnSuccessListener {
+            val location = Location()
+            location.lat = it.latitude
+            location.lng = it.longitude
+            location.zoom = 15f
+            Timber.i("CURRENT LOCATION $location")
+            editViewModel.setProductLocation(location)
+            Timber.i("LOCATION READY")
+            locationReady = true
+            locationUpdate()
+        }
+    }
+
+    private fun doPermissionLauncher() {
+        requestPermissionLauncher =
+            this.registerForActivityResult(ActivityResultContracts.RequestPermission())
+            { isGranted: Boolean ->
+                if (isGranted) {
+                    doSetCurrentLocation()
+                } else {
+                    val location = Location()
+                    location.lat = 40.0
+                    location.lng = -10.0
+                    location.zoom = 15f
+                    editViewModel.setProductLocation(location)
+                    Timber.i("LOCATION READY")
+                    locationReady = true
+                    locationUpdate()
+                }
+            }
+    }
+
+   /*@SuppressLint("MissingPermission")
+   //\ https://next.tutors.dev/#/lab/wit-hdip-comp-sci-2020-mobile-app-dev.netlify.app/topic-10-location/unit-03-dh/book-03-location-tracking/Exercises
     fun doRestartLocationUpdates() {
         var locationCallback = object : LocationCallback() {
             override fun onLocationResult(locationResult: LocationResult?) {
@@ -216,39 +257,7 @@ class EditFragment : Fragment() , OnMapReadyCallback {
         if (!edit) {
             locationService.requestLocationUpdates(locationRequest, locationCallback, null)
         }
-    } */
-    @SuppressLint("MissingPermission")
-    fun doSetCurrentLocation() {
-        locationService.lastLocation.addOnSuccessListener {
-            val location = Location()
-            location.lat = it.latitude
-            location.lng = it.longitude
-            location.zoom = 15f
-            Timber.i("CURRENT LOCATION $location")
-            editViewModel.setProductLocation(location)
-            Timber.i("LOCATION READY")
-            locationReady = true
-            locationUpdate()
-        }
-    }
-    private fun doPermissionLauncher() {
-        requestPermissionLauncher =
-            this.registerForActivityResult(ActivityResultContracts.RequestPermission())
-            { isGranted: Boolean ->
-                if (isGranted) {
-                    doSetCurrentLocation()
-                } else {
-                    val location = Location()
-                    location.lat = 40.0
-                    location.lng = -10.0
-                    location.zoom = 15f
-                    editViewModel.setProductLocation(location)
-                    Timber.i("LOCATION READY")
-                    locationReady = true
-                    locationUpdate()
-                }
-            }
-    }
+    }*/
 
     private fun registerImagePickerCallback() {
 

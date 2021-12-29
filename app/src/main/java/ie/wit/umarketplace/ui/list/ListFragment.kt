@@ -144,7 +144,7 @@ class ListFragment : Fragment(), ProductClickListener {
     private fun setSwipeRefresh() {
         fragBinding.swiperefresh.setOnRefreshListener {
             fragBinding.swiperefresh.isRefreshing = true
-            showLoader(loader,"Downloading Donations")
+            showLoader(loader,"Downloading Products")
             listViewModel.load()
         }
     }

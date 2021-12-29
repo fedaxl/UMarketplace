@@ -26,6 +26,7 @@ class ViewViewModel : ViewModel() {
         get() = _product
         set(value) {_product.value = value.value}
 
+
     fun getProduct( id: String?) {
         try {
 

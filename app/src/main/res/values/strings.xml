@@ -55,10 +55,9 @@
     <string name="totalSoFar">totalSoFar</string>
     <string name="enter_amount">enter_amount</string>
     <string name="message">message</string>
-    <string name="upvotes">upvotes</string>
-    <string name="amt">amt</string>
     <string name="payment">payment</string>
     <string name="group_communicate">group_communicate</string>
     <string name="action_share">action_share</string>
     <string name="action_send">action_send</string>
+    <string name="placeholder">image placeholder</string>
 </resources>

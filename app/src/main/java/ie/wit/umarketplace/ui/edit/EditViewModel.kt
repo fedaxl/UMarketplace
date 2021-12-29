@@ -41,7 +41,7 @@ class EditViewModel : ViewModel() {
 
     fun addProduct(firebaseUser: MutableLiveData<FirebaseUser>, context: Context) {
         _status.value = try {
-            var product = ProductModel(title = _product.value!!.title, description = _product.value!!.description, category = _product.value!!.category,
+            var product = ProductModel(title = _product.value!!.title, amount = _product.value!!.amount, description = _product.value!!.description, category = _product.value!!.category,
                 image = _product.value!!.image, email = firebaseUser.value?.email!!, lat = _product.value!!.lat, lng = _product.value!!.lng, zoom=15f)
             FirebaseDBManager.create(firebaseUser,product, context)
             true
@@ -49,7 +49,7 @@ class EditViewModel : ViewModel() {
             false
         }
     }
-    fun editProduct(userid: String, productid: String, product: ProductModel, context: Context, imageChanged:Boolean) {
+    fun editProduct(userid: String, productid: String, product: ProductModel, context: Context, imageChanged: Boolean) {
         _status.value = try {
             FirebaseDBManager.update(userid,productid, product, context, imageChanged)
             true
