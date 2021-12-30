@@ -8,13 +8,15 @@
 
     <ImageView
         android:id="@+id/diyLogo"
-        android:layout_width="304dp"
-        android:layout_height="292dp"
-        android:src="@drawable/screen_background"
+        android:layout_width="408dp"
+        android:layout_height="350dp"
+        android:src="@drawable/logo_screen_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.359" />
 
     <ProgressBar
         android:id="@+id/progressBar"

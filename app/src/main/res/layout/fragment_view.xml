@@ -28,8 +28,10 @@
                 android:inputType="text"
                 android:padding="8dp"
                 android:text="@={viewvm.observableProduct.title}"
-                android:textSize="20sp"
-                app:layout_constraintHorizontal_bias="0.344"
+                android:textAlignment="viewStart"
+                android:textColor="@color/color_primaryDark"
+                android:textSize="16sp"
+                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="TouchTargetSizeCheck" />
@@ -47,10 +49,28 @@
                 android:minHeight="48dp"
                 android:padding="8dp"
                 android:text="@={viewvm.observableProduct.description}"
-                android:textSize="14sp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/color_primaryDark"
+                android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/title" />
 
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="307dp"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:maxLength="100"
+                android:maxLines="2"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:text="@={viewvm.observableProduct.amount}"
+                android:textColor="@color/color_primaryDark"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/description" />
 
             <com.google.android.gms.maps.MapView
                 android:id="@+id/mapView"
@@ -67,16 +87,8 @@
                 android:layout_height="212dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/description"
+                app:layout_constraintTop_toBottomOf="@+id/amount"
                 app:srcCompat="@drawable/ic_launcher_foreground" />
-
-            <Button
-                android:id="@+id/reviewButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="send"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/mapView" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

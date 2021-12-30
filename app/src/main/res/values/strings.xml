@@ -57,7 +57,8 @@
     <string name="message">message</string>
     <string name="payment">payment</string>
     <string name="group_communicate">group_communicate</string>
-    <string name="action_share">action_share</string>
-    <string name="action_send">action_send</string>
+    <string name="action_share">Share</string>
+    <string name="action_send">Send</string>
     <string name="placeholder">image placeholder</string>
+    <string name="action_darkmode">Dark mode</string>
 </resources>

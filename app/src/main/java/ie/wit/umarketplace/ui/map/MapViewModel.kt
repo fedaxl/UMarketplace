@@ -77,10 +77,11 @@ class MapViewModel : ViewModel() {
             marker = LatLng(it.lat, it.lng)
 
             var bitmap = when(it.category) {
-                1 -> bitmapDescriptorFromVector(context, R.drawable.for_sale_product)!!
-                2 -> bitmapDescriptorFromVector(context, R.drawable.sold_product)!!
+                //custom google maps marker
+                1 -> bitmapDescriptorFromVector(context, R.drawable.marker_for_sale)!!
+                2 -> bitmapDescriptorFromVector(context, R.drawable.marker_sold)!!
                 else -> {
-                    bitmapDescriptorFromVector(context, R.drawable.for_sale_product)!!
+                    bitmapDescriptorFromVector(context, R.drawable.marker_for_sale)!!
                 }
             }
 
