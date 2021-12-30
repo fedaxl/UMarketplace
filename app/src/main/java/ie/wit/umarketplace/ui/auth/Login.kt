@@ -103,6 +103,7 @@ class Login : AppCompatActivity() {
         return valid
     }
 
+
     private fun googleSignIn() {
         val signInIntent = loginRegisterViewModel.firebaseAuthManager
             .googleSignInClient.value!!.signInIntent

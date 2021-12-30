@@ -60,5 +60,5 @@
     <string name="action_share">Share</string>
     <string name="action_send">Send</string>
     <string name="placeholder">image placeholder</string>
-    <string name="action_darkmode">Dark mode</string>
+    <string name="action_theme">Change Theme</string>
 </resources>

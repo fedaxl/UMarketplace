@@ -45,7 +45,7 @@ class Home : AppCompatActivity() {
             setOf(
                 R.id.editFragment,
                 R.id.listFragment,
-                R.id.aboutFragment
+                R.id.aboutFragment,
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)

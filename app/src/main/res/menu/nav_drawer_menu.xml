@@ -24,12 +24,7 @@
     </item>
     <item android:title="Settings">
         <menu>
-            <item android:id="@+id/night_mode" android:icon="@drawable/moon" android:title="@string/action_darkmode"/>
-            <item
-                android:id="@+id/themeSwitch"
-                android:title="Switch"
-                app:actionLayout="@layout/switch_item"
-                app:showAsAction="always" />
+            <item android:id="@+id/night_mode" android:icon="@drawable/moon" android:title="@string/action_theme"/>
         </menu>
     </item>
     <item android:title="Access Control">
