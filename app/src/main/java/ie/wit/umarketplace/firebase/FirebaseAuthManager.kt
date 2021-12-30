@@ -78,18 +78,6 @@ private fun configureGoogleSignIn() {
     googleSignInClient.value = GoogleSignIn.getClient(application!!.applicationContext,gso)
 }
 
-init {
-    this.application = application
-    firebaseAuth = FirebaseAuth.getInstance()
-
-    if (firebaseAuth!!.currentUser != null) {
-        liveFirebaseUser.postValue(firebaseAuth!!.currentUser)
-        loggedOut.postValue(false)
-        errorStatus.postValue(false)
-    }
-    configureGoogleSignIn()
-
-}
 
     fun firebaseAuthWithGoogle(acct: GoogleSignInAccount) {
         Timber.i( "UMarketplace firebaseAuthWithGoogle:" + acct.id!!)
