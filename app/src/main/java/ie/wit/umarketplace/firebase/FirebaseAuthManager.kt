@@ -79,6 +79,7 @@ private fun configureGoogleSignIn() {
 }
 
 
+
     fun firebaseAuthWithGoogle(acct: GoogleSignInAccount) {
         Timber.i( "UMarketplace firebaseAuthWithGoogle:" + acct.id!!)
 
