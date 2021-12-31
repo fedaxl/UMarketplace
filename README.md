@@ -25,8 +25,9 @@ For this v2 of the app we have:
 * Map usage with location and custom markers: This functionality uses Google Maps API 
 
 ## UML & Class Diagrams
+Package View created with CodeIris in Android Studio
+[packageView](https://user-images.githubusercontent.com/22814086/147796695-12f0f4de-090d-46e6-a5ba-ea0dcd3487cc.png)
 
-in progress
 
 ## UX/DX Approach Adopted
 UX
