@@ -1,7 +1,7 @@
 # UMarketplace - Technical Report
 UMarketplace is an app designed for users that want to exchange items via app. 
 
-## V2 vs V1 - What's new
+## V1 (UMarketplace) vs V1(Marketplace) - What's new
 The previous version (v1) of this app included:
 
 * Splash Screen
