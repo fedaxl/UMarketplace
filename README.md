@@ -27,6 +27,8 @@ For this v2 of the app we have:
 ## UML & Class Diagrams
 Package View created with CodeIris in Android Studio
 [packageView](https://user-images.githubusercontent.com/22814086/147796695-12f0f4de-090d-46e6-a5ba-ea0dcd3487cc.png)
+UML Diagram
+![UML](https://user-images.githubusercontent.com/22814086/147797705-0d4d6745-00d9-4973-8eeb-75c6976d958d.jpg)
 
 
 ## UX/DX Approach Adopted
